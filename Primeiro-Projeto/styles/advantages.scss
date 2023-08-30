@@ -1,0 +1,25 @@
+.advantages{
+    h2{
+      margin-bottom: 0;  
+    }
+    .advantages-container {
+        display: flex;
+        justify-content: center;
+    
+        h3{
+           font-size:1.5em; 
+        }
+        
+    
+        .advantages-block{
+            text-align: center;
+            width:30vw;
+            font-size: 1.2em;
+        }
+    
+        p {
+            padding:0 3vw;
+        }
+    }
+}
+

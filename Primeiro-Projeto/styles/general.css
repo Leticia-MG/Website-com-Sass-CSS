@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*Este arquivo reune todos os nossos arquivos sass*/ /*Variáveis Sass*/
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #a4de77;
+}
+
+.stripped section {
+  padding: 1.5% 0;
+}
+.stripped section:nth-child(2n) {
+  background-color: rgb(139, 38, 53);
+  color: white;
+}
+
+/*CSS RGB*/
+/*
+NOTA: A operação abaixo é uma versão simplificada e mais fácil de entender
+da do professor.
+*/
+h6 {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/*Tudo que for posto dentro desta estrutura será repetido  até $i
+chegar a quantidade estipulada pelo from e o to/trough. O valor inserido depois
+do from será o valor inicial de $i e o valor inserido depois de to será
+o valor final de $i
+
+NOTA: o to sempre finaliza o loop em um valor a menos que o estipulado
+enquanto que trhough vai até o final.*/
+.hero {
+  height: 100vh;
+  background-color: rgb(139, 38, 53);
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-christina-morillo-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  background-color: rgba(139, 38, 53, 0.8);
+  text-align: center;
+  padding: 5% 0;
+  width: 100%;
+  color: white;
+}
+.hero-title h1 {
+  font-size: 3em;
+}
+
+.cursos {
+  padding: 1.5% 0;
+}
+.cursos .faixa-cursos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 10vw;
+}
+.cursos .faixa-cursos .card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.cursos .faixa-cursos .card .footer-card {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: white;
+  color: black;
+  font-weight: bold;
+  height: 20%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+
+.advantages h2 {
+  margin-bottom: 0;
+}
+.advantages .advantages-container {
+  display: flex;
+  justify-content: center;
+}
+.advantages .advantages-container h3 {
+  font-size: 1.5em;
+}
+.advantages .advantages-container .advantages-block {
+  text-align: center;
+  width: 30vw;
+  font-size: 1.2em;
+}
+.advantages .advantages-container p {
+  padding: 0 3vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vw;
+}
+form * {
+  margin: 5px 0;
+  border-radius: 6px;
+}
+form button {
+  align-self: center;
+  width: 20vw;
+  background-color: rgb(139, 38, 53);
+  border: none;
+  color: white;
+  padding: 2vh 0;
+}
+
+.footer-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-height: 10vh;
+  background-color: rgb(139, 38, 53);
+  color: white;
+}
+.footer-site .footer-info {
+  font-size: 1.05em;
+  color: black;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=general.css.map */

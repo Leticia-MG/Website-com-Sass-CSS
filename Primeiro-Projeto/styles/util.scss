@@ -1,0 +1,21 @@
+@mixin label-font($fontValue:1.2em, $color:black){
+    font-size: $fontValue;
+    color:$color;
+    font-weight: bold;
+}
+@mixin section-style{
+    padding:1.5% 0;
+}
+@mixin bottom-full($height){
+//Nota: Elemento pai dever sempre conter:
+//position: relative;
+right:0;
+left:0;
+bottom:0;
+min-height:$height;
+}
+@mixin centralize-child{ //pode receber parâmetros ao incluir um () no final do nome.
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

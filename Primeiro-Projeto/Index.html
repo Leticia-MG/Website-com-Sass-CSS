@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--flexbox-->
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Font Josefina sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">  
+
+    <!---------CSS--------->
+    <link rel="stylesheet" href="./styles/general.css">
+    <title>Curso de CSS e SASS</title>
+</head>
+<body>
+    <header class="hero"><!--Header-parte roxa-->
+        <div class="hero-title"><!--Header-faixa-verde-->
+            <h1>Curso Completo de CSS e Sass</h1>
+            <h3>Onde você aprende do jeito certo</h3>
+        </div>
+    </header>
+    <main class="stripped">
+        <section class="cursos">
+            <h2>Cursos</h2>
+            <div class="faixa-cursos"><!--Container dos cards-->
+                <!--cards-->
+                <div class="card">
+                    <img src="https://placehold.co/300x300" alt=""/>
+                    <div class="footer-card">React</div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/300x300" alt=""/>
+                    <div class="footer-card">MongoDB</div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/300x300" alt="React Native"/>
+                    <div class="footer-card">React Native</div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <h2>Vantagens</h2>
+            <div class="advantages-container">
+                <div class="advantages-block">
+                    <h3>Teóricas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula, diam ac venenatis imperdiet, turpis elit sollicitudin magna, lacinia congue dolor lectus non mauris. Morbi cursus orci luctus varius fermentum.</p>
+                </div>
+                <div class="advantages-block">
+                    <h3>Praticas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula, diam ac venenatis imperdiet, turpis elit sollicitudin magna, lacinia congue dolor lectus non mauris. Morbi cursus orci luctus varius fermentum.</p>
+                </div>
+            </div>
+        </section>
+        <section class="formulario">
+            <h3>Contato</h3>
+            <form action="">
+                <input type="text" name="name" placeholder="Nome"/>
+                <input type="text" name="phone" placeholder="Telefone"/>
+                <textarea name="message" cols="30" rows="10" placeholder="mensagem"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-site">
+        <div class="footer-info">
+            copyright Tissa 20223
+        </div>
+    </footer>
+</body>
+</html>

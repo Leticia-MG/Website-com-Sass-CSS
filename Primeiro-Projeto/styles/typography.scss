@@ -1,0 +1,33 @@
+/*
+NOTA: A operação abaixo é uma versão simplificada e mais fácil de entender
+da do professor.
+*/
+$title-size: 1.25;
+@for $i from 6 through 1 {
+   h#{$i}{
+        font-size: #{$title-size}em;
+        text-align: center;
+        
+    }
+    $title-size: $title-size + 0.25;
+
+
+}
+/*Tudo que for posto dentro desta estrutura será repetido  até $i
+chegar a quantidade estipulada pelo from e o to/trough. O valor inserido depois
+do from será o valor inicial de $i e o valor inserido depois de to será
+o valor final de $i
+
+NOTA: o to sempre finaliza o loop em um valor a menos que o estipulado
+enquanto que trhough vai até o final.*/
+
+//Solução do professor:
+//@for $i from 6 through 1{
+    //$step: 0.25;
+    //$initial: 1;
+    //$extra: ((6 - $i)*$step);
+    //h#{$i}{
+        //font-size: #{((6 - $i)*$step) + 5}em;
+        //font-size: #{$extra + $initial}em;
+    //}
+//}

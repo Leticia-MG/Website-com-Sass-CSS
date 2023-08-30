@@ -1,0 +1,39 @@
+/*Variáveis Sass*/
+$primary:rgba(139, 38, 53, 1);//--claret
+$primary-transparent:rgba(139, 38, 53, 0.8);//--claret versão transparente
+$secondary:rgba(224, 226, 219, 1);//--alabaster
+$light-green:rgba(178, 227, 140, 1);
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: darken($light-green, 5%);
+}
+
+//.stripped section:nth-child(1n){
+//pinta o primeiro, pula um, pinta o terceiro e assim em diante
+//.stripped section:nth-child(2n){
+//pinta o segundo, pula o terceiro, pinta o quarto(se existir) e assim por diante
+//o stripped é um atributo CSS e não é exclusivo do sass.  
+  //background-color: $primary;
+  //color:white;
+//}
+
+.stripped section{
+  padding:1.5% 0;
+  &:nth-child(2n){
+  // O & representa o elemento pai, no caso qualquer section com a classe stripped.
+    background-color: $primary;
+    color:white;
+  };
+}
+
+//Esta versão aqui é exclusiva do sass:
+
+
+
+//:root {
+    /*CSS RGB*/
+    //--primary: rgba(139, 38, 53, 1);//--claret
+    //--secondary: rgba(224, 226, 219, 1);//--alabaster
+    //--light-green: rgba(178, 227, 140, 1);
+//}
+

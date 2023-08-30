@@ -1,0 +1,10 @@
+.footer-site{
+    @include centralize-child;
+    @include bottom-full(10vh);
+    background-color: $primary;
+    color:white;
+   
+    .footer-info{
+        @include label-font(1.05em);
+    }
+}
