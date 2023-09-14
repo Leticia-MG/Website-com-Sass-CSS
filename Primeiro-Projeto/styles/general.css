@@ -1,19 +1,23 @@
 @charset "UTF-8";
-/*Este arquivo reune todos os nossos arquivos sass*/ /*Variáveis Sass*/
+/*Este arquivo reune todos os nossos arquivos sass*/ /*Estas são variáveis Sass*/
+/*CSS RGB*/
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #a4de77;
 }
 
 .stripped section {
+  /*pega todas as sections dentro do main com a classe stripped e pinta somente usando o
+  nth-child(2nd)*/
   padding: 1.5% 0;
 }
 .stripped section:nth-child(2n) {
+  /*O & representa o elemento pai, no caso qualquer elemento com a classe stripped.
+  Neste caso é o main*/
   background-color: rgb(139, 38, 53);
   color: white;
 }
 
-/*CSS RGB*/
 /*
 NOTA: A operação abaixo é uma versão simplificada e mais fácil de entender
 da do professor.
@@ -54,7 +58,12 @@ do from será o valor inicial de $i e o valor inserido depois de to será
 o valor final de $i
 
 NOTA: o to sempre finaliza o loop em um valor a menos que o estipulado
-enquanto que trhough vai até o final.*/
+enquanto que through vai até o final.*/
+/*
+Mixins são como kits de especificações css que podem ser aplicadas
+repetidas vezes em vários elementos sem que seja preciso copiar e
+colar elas todas as vezes
+*/
 .hero {
   height: 100vh;
   background-color: rgb(139, 38, 53);
@@ -75,6 +84,10 @@ enquanto que trhough vai até o final.*/
 }
 .hero-title h1 {
   font-size: 3em;
+  /*Aqui eu sobre-escrevo o valor normalmente setado pelo typography
+  pois o Título principal do site precisa de um valor maior do o que ele
+  seta para o h1, porém todos os outros valores setados para os títulos
+  menores estão bons*/
 }
 
 .cursos {

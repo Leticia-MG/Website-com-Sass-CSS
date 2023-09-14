@@ -1,39 +1,44 @@
-/*Variáveis Sass*/
+/*Estas são variáveis Sass*/
 $primary:rgba(139, 38, 53, 1);//--claret
-$primary-transparent:rgba(139, 38, 53, 0.8);//--claret versão transparente
-$secondary:rgba(224, 226, 219, 1);//--alabaster
-$light-green:rgba(178, 227, 140, 1);
+$secondary:rgba(178, 227, 140, 1);
+
+//Esta versão aqui é exclusiva do CSS:
+
+//:root {
+//Criar variáveis css dentro do escopo root torna elas globais  
+    /*CSS RGB*/
+    //--primary: rgba(139, 38, 53, 1);//--claret
+    //--secondary: rgba(178, 227, 140, 1);
+//}
+
 body{
   font-family: 'Josefin Sans', sans-serif;
-  background-color: darken($light-green, 5%);
+  background-color: darken($secondary, 5%);
+  //O darken é uma fucionabilidade do sass que escurece a cor especificada
 }
 
+//o stripped é um atributo CSS que não é exclusivo do sass.
+
 //.stripped section:nth-child(1n){
-//pinta o primeiro, pula um, pinta o terceiro e assim em diante
+//pinta a primeira section, pula uma, pinta a terceira e assim em diante
+
 //.stripped section:nth-child(2n){
-//pinta o segundo, pula o terceiro, pinta o quarto(se existir) e assim por diante
-//o stripped é um atributo CSS e não é exclusivo do sass.  
+//pinta a segundo section, pula a terceira, pinta a quarta(se existir) e assim por diante
   //background-color: $primary;
   //color:white;
 //}
 
+//Esta é uma forma simplificada de usar o stripped
 .stripped section{
+/*pega todas as sections dentro do main com a classe stripped e pinta somente usando o
+nth-child(2nd)*/  
   padding:1.5% 0;
   &:nth-child(2n){
-  // O & representa o elemento pai, no caso qualquer section com a classe stripped.
+  /*O & representa o elemento pai, no caso qualquer elemento com a classe stripped.
+  Neste caso é o main*/
     background-color: $primary;
     color:white;
   };
 }
 
-//Esta versão aqui é exclusiva do sass:
-
-
-
-//:root {
-    /*CSS RGB*/
-    //--primary: rgba(139, 38, 53, 1);//--claret
-    //--secondary: rgba(224, 226, 219, 1);//--alabaster
-    //--light-green: rgba(178, 227, 140, 1);
-//}
 

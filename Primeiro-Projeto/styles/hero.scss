@@ -11,7 +11,6 @@
 }
 
 .hero-title{
-    //background-color:$primary-transparent;
     background-color:adjust-color($color: $primary, $alpha: -0.2);
     //NOTA: A propriedade adjust-color só existe no sass enão no css normal.
     text-align:center;
@@ -19,7 +18,11 @@
     width:100%;
     color:white;
 
-    h1{
-      font-size: 3em;  
-    }
+   h1{
+      font-size: 3em;
+      /*Aqui eu sobre-escrevo o valor normalmente setado pelo typography
+      pois o Título principal do site precisa de um valor maior do o que ele
+      seta para o h1, porém todos os outros valores setados para os títulos
+      menores estão bons*/
+  }
 }

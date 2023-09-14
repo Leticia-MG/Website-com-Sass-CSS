@@ -1,6 +1,12 @@
+/*
+Mixins são como kits de especificações css que podem ser aplicadas
+repetidas vezes em vários elementos sem que seja preciso copiar e
+colar elas todas as vezes
+*/
+
 @mixin label-font($fontValue:1.2em, $color:black){
-    font-size: $fontValue;
-    color:$color;
+    font-size: $fontValue;//Placeholder por valor da fonte
+    color:$color;//Placeholder pro valor da cor
     font-weight: bold;
 }
 @mixin section-style{
@@ -12,7 +18,7 @@
 right:0;
 left:0;
 bottom:0;
-min-height:$height;
+min-height:$height;//placeholder para o valor da altura desejado.
 }
 @mixin centralize-child{ //pode receber parâmetros ao incluir um () no final do nome.
     display: flex;
